@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@220;200&family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:#424242;;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-text-color:#1d69a3;
+    --accent-color-dark:#555;
+    --padding-inline-section:20px;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    color: var(--primary-text-color);
+    padding-top: 50px;
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.25rem;
+}
+
+p{
+    font-family:'Roborto',sans-serif;
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    color: #387ed1;;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.container{
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section) ;
+    overflow: hidden;
+}
+
+.flex{
+    display:flex;
+    align-items: center;
+}
+
+.button{
+    background-color: var(--accent-color);
+    border: none;
+    border-radius:5px;
+    font-weight: 600;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+
+}
+
+.button:hover{
+    background-color: var(--accent-color-dark);
+    
+}
+
+a:hover{
+    color: var(--accent-color-dark);
+}
+
+/*nav-bar*/
+  
+nav{
+    background-color: #fafafb;;
+    border: 1px solid #eee;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0px;
+}
+
+.main-nav{
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 20px;
+   
+}
+
+.nav-links{
+    flex-basis: 730px;
+}
+
+.nav-links ul{
+   justify-content: end;
+   gap: 40px;
+}
+
+.company-logo{
+    width: 200px;
+}
+
+.hover-links{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-links:hover{
+    color: var(--accent-color);
+}
+
+/*banner*/
+
+header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.banner{
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.banner img{
+    width: 600px;
+}
+
+/*sub-hero*/
+
+.sub-hero-banner{
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.sub-hero-banner p{
+    margin: 10px 0px 20px 0px;
+
+}
+
+.sub-hero-banner a{
+    margin: 25px;
+    padding: 10px 30px;
+}
+
+/*big feature1*/
+
+.big-feature1{
+    padding: 100px var(--padding-inline-section) 120px;
+}
+
+.big-feature-section{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+
+.feature-image{
+    max-width: 45%;
+    
+}
+
+.feature-image img{
+    max-width: 100%;
+  
+}
+
+.feature-description{
+    flex-basis: 48%;
+    width: 48%;
+    flex-direction: column;
+   align-items: flex-start;
+
+} 
+
+.feature-description h2{
+    margin-bottom: 20px;
+}
+
+.feature-description p{
+    font-size: 1rem;
+    margin: 15px 0px 16px 0px;
+}
+
+
+.feature-description img{
+    max-width: 100%;
+    margin: 15px 0px 16px 0px;
+}
+
+
+.lists{
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.feature-description-list{
+    display: block;
+    list-style: disc;
+    margin: 16px 0px;
+    padding-left: 20px;
+}
+
+.feature-list-item{
+    margin-bottom: 10px;
+    font-family:'Roborto',sans-serif;
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+}
+
+/*big feature2*/
+
+.big-feature2{
+    padding: 0 var(--padding-inline-section) 120px;
+    padding-bottom: 120px;
+}
+
+.big-feature-description1{
+    padding: 0 var(--padding-inline-section) 120px;
+   
+    justify-content: space-between;
+    
+   
+}
+
+.feature-image1 img{
+    max-width: 550px;
+  
+}
+
+.feature-description1{
+    flex-basis: 39%;
+    max-width: 39%;
+}
+  
+.big-feature-description1 h2{
+    margin-bottom: 40px;
+}
+
+.feature-description-content p{
+    margin: 5px 0px 32px;
+    font-size: 1rem;
+
+}
+
+.feature-image1 p{
+    text-align: center;
+}
+
+.aa{
+    margin-left: 24px;
+}
+
+/*big feature3*/
+
+.big-feature-description2{
+    padding: 0px var(--padding-inline-section) 120px;
+    justify-content: space-around;
+
+}
+
+.feature-description2{
+    flex-basis: 39%;
+    max-width: 39%;
+}
+
+.feature-description2 h2{
+    margin-bottom: 20px;
+}
+
+.feature-description2 p{
+    margin: 16px 0px 15px;
+}
+
+.pricing-boxes{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pricing-box{
+    width: 211px;
+    padding: 0px 25px;
+    border: 1px solid #ccc;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+    text-align: center;
+    min-height: 205px;
+}
+
+#box1{
+    border-right: none;
+}
+
+.pricing-box p{
+    padding: 16px 0px 15px;
+}
+
+.pricing-box h1{
+    margin-top: 10px;
+}
+
+
+/*big feature4*/
+
+.big-feature-description3{
+    padding: 0px var(--padding-inline-section) 120px;
+    justify-content: space-between;
+
+}
+
+.feature-image4{
+    flex-basis: 39%;
+    width: 39%;
+    
+}
+
+.feature-image4 img{
+    width: 100%;
+}
+
+
+.feature-description3{
+    flex-basis: 48%;
+    width: 48%;
+}
+
+.feature-description3 h2{
+    margin-bottom: 20px;
+}
+
+.feature-description3 p{
+    margin: 16px 0px 15px;
+}
+
+/*sub hero2*/
+
+.near-footer{
+    padding: 20px 0px 80px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #fafafb;;
+    border: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.end-footer{
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-description{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 22%;
+    width: 22%;
+    min-height: 334px;
+}
+
+.footer-description h4{
+    margin-bottom: 15px;
+}
+
+.company-logo-footer img{
+    max-width: 152px;
+}
+
+.footer-logo{
+    padding: 10px 0px;
+}
+
+.social{
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.describe a{
+    margin-bottom: 10px;
+}
+
+.footer-description a{
+    color: var(--secondary-text-color);
+    font-weight: 500;
+}
+
+.footer-description a:hover{
+    color: var(--accent-color);
+}
