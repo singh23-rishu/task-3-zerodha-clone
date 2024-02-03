@@ -111,4 +111,20 @@
         max-width: 100%;
     }
 
+    
+    .nav-links{
+        flex-basis: 49%;
+    }
+
+    .nav-links ul{
+    
+        gap: 0px;
+    }
+
+    .company-logo{
+        width: 188px;
+    }
+    
+
+
 }
